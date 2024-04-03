@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Cone Calculator</title>
+    <link rel="stylesheet" href="calci.css">
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="ice-container" id="ice-container"></div>
+        <div class="container" id="myCandy">
+            <div class="calculator">
+                <input type="text" id="display" readonly>
+                <div class="buttons">
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="appendToDisplay('%')">%</button>
+                    <button onclick="appendToDisplay('**')">x<sup>2</sup></button>
+                    <button onclick="appendToDisplay('/')">÷</button>
+                    <button onclick="appendToDisplay(7)">7</button>
+                    <button onclick="appendToDisplay(8)">8</button>
+                    <button onclick="appendToDisplay(9)">9</button>
+                    <button onclick="appendToDisplay('*')">x</button>
+                    <button onclick="appendToDisplay(4)">4</button>
+                    <button onclick="appendToDisplay(5)">5</button>
+                    <button onclick="appendToDisplay(6)">6</button>
+                    <button onclick="appendToDisplay('-')">-</button>
+                    <button onclick="appendToDisplay(1)">1</button>
+                    <button onclick="appendToDisplay(2)">2</button>
+                    <button onclick="appendToDisplay(3)">3</button>
+                    <button onclick="appendToDisplay('+')">+</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="appendToDisplay(0)">0</button>
+                    <button onclick="calculate()">=</button>
+                </div>
+            </div>
+            <div class="error">
+                <div class="stick"></div>
+            </div>
+
+        </div>
+        <div class="btn">
+            <button class="open-button" onclick="openCandy()">FUN CALCI</button>
+        </div>
+
+
+    </div>
+
+    <script src="calci.js"></script>
+</body>
+
+</html>

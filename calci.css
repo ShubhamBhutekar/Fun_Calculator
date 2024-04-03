@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.maindiv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(60deg, brown 70%, bisque 30%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url('ice.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.container {
+    max-width: 300px;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 1;
+}
+
+
+
+.calculator {
+    border: 5px solid #f5a623;
+    border-radius: 50% / 100px;
+    background: linear-gradient(90deg, chocolate 50%, white 50%);
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(30deg, chocolate 75%, white 25%);
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffb300;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+
+.error {
+    display: flex;
+    width: 100%;
+}
+
+.stick {
+    width: 17%;
+    height: 20vh;
+    transform: translateY(-6px);
+    margin: auto;
+    background-color: white;
+    border: 5px solid #f5a623;
+    border-radius: 10px;
+}
+
+.ice-candy {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(90deg, chocolate 50%, white 50%);
+    border-radius: 50% / 100px;
+    position: absolute;
+    animation: drop 2.5s ease-in-out infinite;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-100vh);
+        /* opacity: 0; */
+    }
+
+    50% {
+        /* opacity: 1; */
+    }
+
+    100% {
+        transform: translateY(100vh);
+        /* opacity: 0; */
+    }
+}
+
